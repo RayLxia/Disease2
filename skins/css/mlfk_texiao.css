@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.main-l-tt .main-l-tt-b .decorate-box,
+.main-l-tt .main-l-tt-t .decorate-box {
+    position: relative;
+}
+.main-l-tt .main-l-tt-b .decorate-box .webBox,
+.main-l-tt .main-l-tt-t .decorate-box .webBox {
+    width: 180px;
+    position: absolute;
+    left: 50%;
+    margin-left: -75px;
+    top: 25px;
+    color: #008d9f;
+    background-color: #E0FBFF;
+    z-index: 999;
+    border: 1px solid #008d9f;
+    display: none;
+}
+.main-l-tt .main-l-tt-b .decorate-box .webBox a,
+.main-l-tt .main-l-tt-t .decorate-box .webBox a {
+    float: left;
+    text-align: center;
+    width: 50%;
+    height: 20px;
+    display: block;
+    font-size: 12px;
+    border-bottom: 1px solid #fff;
+    white-space: nowrap;
+    padding: 3px 0;
+}
+.main-l-tt .main-l-tt-b .decorate-box .webBox a:hover,
+.main-l-tt .main-l-tt-t .decorate-box .webBox a:hover {
+    background-color: #fff;
+}

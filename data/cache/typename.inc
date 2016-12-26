@@ -1,14 +1,8 @@
 <?php
-$typeArr[1] = '引产证明';
-$typeArr[2] = '引产医院';
-$typeArr[3] = '大月份引产';
-$typeArr[4] = '引产费用';
-$typeArr[5] = '新闻动态';
-$typeArr[6] = '就医指南';
+$typeArr[37] = '项目';
 $typeArr[7] = '引产咨询问答';
-$typeArr[8] = '百科';
-$typeArr[9] = '产科';
-$typeArr[10] = '妇科';
+$typeArr[9] = '产科知识百科';
+$typeArr[10] = '妇科疾病百科';
 $typeArr[11] = '备孕';
 $typeArr[12] = '孕期检查';
 $typeArr[13] = '分娩方式';
