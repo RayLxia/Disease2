@@ -99,3 +99,8 @@ ins {
     text-decoration: none;
 }
 
+textarea {
+    border:1px solid #ccc;
+    width: 217px;
+    height: 150px;
+}

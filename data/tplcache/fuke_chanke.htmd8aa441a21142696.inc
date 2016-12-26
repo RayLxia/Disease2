@@ -33,10 +33,7 @@ $z[13]=Array("field","",15674,15703);
 $z[13][4]['name']="typename";
 $z[14]=Array("channelartlist","\r\n                        <li class=\"projects-box\">\r\n                            <h3><a href=\"{dede:field name='typeurl'/}\" target=\"_blank\">{dede:field name='typename'/}</a></h3>\r\n                            <ul class=\"projects clearfix\">\r\n                                {dede:arclist titlelen='42' row='20'}\r\n                                    <li>\r\n                                        <a href=\"[field:arcurl /]\" target=\"_blank\">\r\n                                            [field:title /]\r\n                                        </a>\r\n                                    </li>\r\n                                {/dede:arclist}\r\n                            </ul>\r\n                        </li>\r\n                        ",16045,16824);
 $z[14][4]['row']="20";
-$z[15]=Array("type","\r\n                            <span><a href=\"[field:typelink /]\" target=\"_blank\">【详情】</a></span>\r\n                            ",18056,18221);
+$z[15]=Array("type","\r\n                            <span><a href=\"[field:typelink /]\" target=\"_blank\">【详情】</a></span>\r\n                            ",17247,17412);
 $z[15][4]['typeid']="31";
-$z[16]=Array("channelartlist","\r\n                      <dl>\r\n                          <dt>一级标题:<a href=\"{dede:field name='typeurl'/}\">{dede:field name='typename'/}</a></dt>\r\n                          <dd>\r\n                              {dede:arclist titlelen='42' row='20'}\r\n                              <ul class='autod'>\r\n                                  <li>\r\n                                      文章标题: <a href=\"[field:arcurl /]\">\r\n                                      [field:title /]\r\n                                  </a>\r\n                                  </li>\r\n                              </ul>\r\n                              {/dede:arclist}\r\n                          </dd>\r\n                      </dl>\r\n                      ",27734,28549);
-$z[16][4]['typeid']="11,12,13,15,16,17,18,20,21,22,23";
-$z[16][4]['row']="20";
 
 ?>

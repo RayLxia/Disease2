@@ -322,8 +322,8 @@
     background: url(/skins/images/qiepian/tu_7.png) no-repeat;
 }
 #index-mainBody .main-l .main-l-mb .tab-3 .tab-3-ul li + li {
-    padding-left: 9px;
-    padding-right: 9px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 #index-mainBody .main-l .main-l-m .tab-2 .tab-2-ul li + li {
     padding-left:7px;
@@ -660,6 +660,6 @@
     padding-bottom:22px;
     float: left;
 }
-.friendLink-nets ul li a {
+.friendLink-nets ul li img{
     border: 1px solid #e3e3e3;
 }
