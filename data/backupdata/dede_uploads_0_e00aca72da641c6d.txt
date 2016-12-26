@@ -1,0 +1,2 @@
+INSERT INTO `dede_uploads` VALUES('1','0','161221/1-1612210Z423R4.jpg','/uploads/allimg/161221/1-1612210Z423R4.jpg','1','1037','646','0','65926','1482282263','1');
+INSERT INTO `dede_uploads` VALUES('2','15','È«Õ¾»ÃµÆ3','/uploads/allimg/161221/1-1612210ZG1M4.jpg','1','366','466','0','98266','1482282431','1');

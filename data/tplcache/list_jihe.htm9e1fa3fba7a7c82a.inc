@@ -1,0 +1,43 @@
+<?php
+$z[0]=Array("field","",283,306);
+$z[0][4]['name']="seotitle";
+$z[1]=Array("global","",307,333);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("global","",381,411);
+$z[2][4]['name']="cfg_description";
+$z[3]=Array("global","",452,479);
+$z[3][4]['name']="cfg_keywords";
+$z[4]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",2122,2316);
+$z[4][4]['typeid']="31";
+$z[5]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",2392,2586);
+$z[5][4]['typeid']="32";
+$z[6]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",2662,2856);
+$z[6][4]['typeid']="33";
+$z[7]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",2932,3126);
+$z[7][4]['typeid']="34";
+$z[8]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",3202,3396);
+$z[8][4]['typeid']="38";
+$z[9]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",3472,3666);
+$z[9][4]['typeid']="35";
+$z[10]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",3742,3936);
+$z[10][4]['typeid']="36";
+$z[11]=Array("field","",4597,4626);
+$z[11][4]['name']="position";
+$z[12]=Array("arclist","\r\n                <a href=\"[field:arcurl/]\" target=\"_blank\">\r\n                    [field:title /] |\r\n                </a>\r\n                ",4784,5004);
+$z[12][4]['titlelen']="46";
+$z[12][4]['orderby']="rand";
+$z[12][4]['flag']="s";
+$z[12][4]['pagesize']="3";
+$z[13]=Array("field","",5627,5656);
+$z[13][4]['name']="typename";
+$z[14]=Array("list","\r\n                        <li>\r\n                            <span>[field:global.autoindex/]</span>\r\n                            <a href=\"[field:arcurl/]\" target=\"_blank\">\r\n                                <p>[field:title/]</p>\r\n                            </a>\r\n                        </li>\r\n                        ",5993,6369);
+$z[14][4]['row']="15";
+$z[14][4]['pagesize']="15";
+$z[14][4]['titlelen']="46";
+$z[15]=Array("pagelist","",6472,6543);
+$z[15][4]['listitem']="index,pageno,info,pre,next,end";
+$z[15][4]['listsize']="2";
+$z[16]=Array("type","\r\n                            <span><a href=\"[field:typelink /]\" target=\"_blank\">¡¾ÏêÇé¡¿</a></span>\r\n                            ",6974,7139);
+$z[16][4]['typeid']="31";
+
+?>

@@ -1,0 +1,99 @@
+@charset "UTF-8";
+body{
+    background-color: #fff;
+}
+footer{
+    background-color: #e3e3e3;
+}
+.ftr-fl{
+    width: 276px;
+    height: 240px;
+    margin: 40px 0 0 19px;
+}
+.ftr-fl .ftr-logo{
+    display: block;
+    width: 272px;
+    height: 178px;
+    background: url("../../images/optimized-disease-article/ft-hos-logo.png") no-repeat center center;
+    margin-left: 4px;
+}
+.ftr-fl p{
+    width: 272px;
+    height: 43px;
+    line-height: 43px;
+    border-radius: 21.5px;
+    background-color: #d4d4d4;
+    text-align: center;
+    color: #fff;
+    margin-top: 19px;
+}
+.ftr-fl p span:first-child{
+    font-size: 16px;
+}
+.ftr-fl p span:nth-child(2){
+    font-size: 24px;
+}
+.ftr-fl p span:last-child{
+    font-size: 21px;
+}
+.ft-link-public{
+    width: 108px;
+    margin-top: 58px;
+}
+.ft-link-first{
+    margin-right: 56px;
+    margin-left: 74px;
+}
+.ft-link-second{
+    margin-right: 55px;
+}
+.ft-link-three{
+    margin-right: 44px;
+}
+.ft-link-public h3{
+    font-size: 16px;
+    line-height: 16px;
+    color: #494949;
+    font-family: "微软雅黑";
+}
+.ft-link-public p.p-line{
+    margin-top: 8px;
+    line-height: 1px;
+    margin-bottom: 11px;
+    color: #494949;
+}
+.ft-link-public p a{
+    font-size: 12px;
+    line-height: 28px;
+    font-family: "宋体";
+    color: #494949;
+}
+.ftr-fr{
+    width: 144px;
+    margin-right: 22px;
+    margin-top: 54px;
+}
+.ftr-fr p:first-child{
+    width: 138px;
+    height: 138px;
+    background: url("../../images/weixin-logo.png") no-repeat center center;
+    margin: 0 auto;
+}
+.ftr-fr p:nth-child(2){
+    font-size: 12px;
+    line-height: 32px;
+    text-align: center;
+}
+.footer-info{
+    width: 100%;
+}
+.footer-info .p-info{
+    width: 884px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 32px;
+    color: #494949;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 31px;
+}

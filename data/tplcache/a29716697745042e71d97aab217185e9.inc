@@ -1,0 +1,1 @@
+<span><a href="[field:typelink /]">¡¾ֿךַי¡¿</a></span>

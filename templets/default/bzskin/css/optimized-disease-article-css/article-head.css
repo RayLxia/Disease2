@@ -1,0 +1,56 @@
+@charset "UTF-8";
+body{
+    background-color: #fff;
+}
+header .hd-top{
+    height: 35px;
+    line-height: 35px;
+    background: url("../../images/hd-bg.jpg") no-repeat center center;
+}
+.hd-top p.p-welcome{
+    font-size: 16px;
+    color: #474747;
+    padding-left: 25px;
+}
+.hd-top ul li:first-child{
+    font-size: 14px;
+    color: #474747;
+    letter-spacing: 0.5px;
+    margin-right: 60px;
+}
+.hd-top ul li:first-child i{
+    color: #f37548;
+}
+.hd-top ul li:last-child{
+    width: 257px;
+    font-size: 16px;
+    color: #f8eed8;
+    letter-spacing: 0.7px;
+    margin-right: 15px;
+}
+.hd-menu{
+    height: 112px;
+    background-color: #f6f6f6;
+}
+.hd-menu .i-logo{
+    display:block;
+    width: 318px;
+    height: 68px;
+    background: url("../../images/optimized-disease-article/article-head-lg.jpg") no-repeat left center;
+    margin: 26px 0 18px 2px;
+    text-indent: -9999px;
+}
+.hd-menu .menu-fr{
+    margin: 63px 0 32px 0;
+}
+.hd-menu .menu-fr p{
+    width: 72px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    color: #232323;
+    margin-right: 25px;
+}
+.hd-menu .menu-fr p:last-child{
+    margin-right: 9px;
+}

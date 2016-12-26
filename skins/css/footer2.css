@@ -1,0 +1,87 @@
+@charset "UTF-8";
+footer{
+    background-color: #e3e3e3;
+}
+.ftr-fl{
+    padding: 40px 0 20px 27px;
+}
+.ftr-fl .ftr-logo{
+    display: block;
+    width: 246px;
+    height: 150px;
+    background: url("/skins/images/footer-logo.png") no-repeat center center;
+}
+
+.ftr-fl p{
+    width: 221px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 17.5px;
+    background-color: #d4d4d4;
+    color: #fff;
+    text-align: center;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.ftr-fl p span:first-child{
+    font-size: 13px;
+}
+.ftr-fl p span:nth-child(2){
+    font-size: 19px;
+}
+.ftr-fl p span:last-child{
+    font-size: 17px;
+}
+.ftr-ctr{
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.ftr-ctr p{
+    font-size: 14px;
+    line-height: 35px;
+    color: #494949;
+}
+.ftr-fr{
+    width: 148px;
+    margin-right: 24px;
+    margin-top: 50px;
+    margin-bottom: 12px;
+}
+.ftr-fr p:first-child{
+    width: 138px;
+    height: 138px;
+    background: url("/skins/images/weixin-logo.png") no-repeat center center;
+    margin: 0 auto;
+}
+.ftr-fr p:last-child{
+    font-size: 12px;
+    line-height: 32px;
+    color: #494949;
+    letter-spacing: 0.1px;
+}
+
+footer .ul-box ul {
+    margin-left: 75px;
+    padding-top: 58px;
+    color: #494949;
+}
+footer .ul-box ul li:first-child {
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+footer .ul-box ul li:first-child:after {
+    content: '';
+    width: 86px;
+    height: 0;
+    position: absolute;
+    border-top: 1px dashed;
+    left: 0;
+    top: 30px;
+}
+footer .ul-box ul li + li {
+    font-size: 12px;
+    margin-top: 10px;
+}

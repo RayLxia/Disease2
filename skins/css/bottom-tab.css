@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+#index-mainBody .last-tab {
+    margin-top: 40px;
+    padding-left:14px;
+    padding-top:24px;
+    border: 1px solid #E3E3E3;
+    padding-bottom: 40px;
+    height: 174px;
+    margin-bottom: 53px;
+}
+#index-mainBody .last-tab .f-ul {
+    padding-top:24px;
+}
+#index-mainBody .last-tab .f-ul li {
+    margin-bottom: 19px;
+    padding: 11px 22px 8px 50px;
+    background-color: #d4d4d4;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+#index-mainBody .last-tab .f-ul li:before {
+    content: '';
+    position: absolute;
+    width: 36px;
+    height: 30px;
+    left: 10px;
+    top: 5px;
+}
+#index-mainBody .last-tab .f-ul li:nth-child(1):before {
+    background: url(/skins/images/xtb/hos-hj.png) no-repeat;
+}
+#index-mainBody .last-tab .f-ul li:nth-child(2):before {
+    background: url(/skins/images/xtb/xj-sb.png) no-repeat;
+    top: 8px;
+}
+#index-mainBody .last-tab .f-ul li:nth-child(3):before {
+    background: url(/skins/images/xtb/hd.png) no-repeat;
+}
+#index-mainBody .last-tab .f-ul li.current {
+    background-color: #f37548;
+}
+#index-mainBody .last-tab .s-ul-box {
+    margin-top:15px;
+    overflow: hidden;
+    height:174px;
+}
+#index-mainBody .last-tab .s-ul {
+    position: relative;
+}
+#index-mainBody .last-tab .s-ul-box .inner-ul {
+    margin-left:20px;
+}
+#index-mainBody .last-tab .s-ul-box .inner-ul li {
+    float: left;
+}
+#index-mainBody .last-tab .s-ul-box .inner-ul li + li {
+    margin-left:1px;
+}

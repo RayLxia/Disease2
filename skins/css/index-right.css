@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+.bgf385ac {
+    background-color: #f385ac;
+}
+.bgfcad59 {
+    background-color: #fcad59;
+}
+.bgf88c68 {
+    background-color: #f88c68;
+}
+.d75f61 {
+    background-color: #d75f61;
+}
+/*li颜色*/
+.bgf39a3c {
+    background-color: #f39a3c;
+}
+.bgd75f61 {
+    background-color: #d75f61;
+}
+.bgdfbf38 {
+    background-color: #dfbf38;
+}
+.bg45beb7 {
+    background-color: #45beb7;
+}
+.bg6ba0c2 {
+    background-color: #6ba0c2;
+}
+/*li背景*/
+.bgf385ac > a {
+    background: url(/skins/images/qiepian/zxzx.png) no-repeat center top;
+}
+.bgf39a3c > a {
+    background: url(/skins/images/qiepian/qqgh.png) no-repeat center top;
+}
+.bgd75f61 > a {
+    background: url(/skins/images/qiepian/zxyy.png) no-repeat center top;
+}
+.bgdfbf38 > a {
+    background: url(/skins/images/qiepian/zxgh.png) no-repeat center top;
+}
+.bg45beb7 > a {
+    background: url(/skins/images/qiepian/zxzj.png) no-repeat center top;
+}
+.bg6ba0c2 > a {
+    background: url(/skins/images/qiepian/lylx.png) no-repeat center top;
+}
+/*main right*/
+#index-mainBody .main .main-r .main-r-b,
+#index-mainBody .main .main-r .main-r-t,
+#index-mainBody .main .main-r .main-r-m {
+    border: 1px solid #E3E3E3;
+    margin-bottom: 40px;
+}
+#index-mainBody .main .main-r {
+    width: 327px;
+}
+#index-mainBody .main .main-r .logo-title h3 {
+    padding-left:78px;
+    padding-top:20px;
+    position: relative;
+    font-size:27px;
+    font-family: "华文新魏";
+    color: #cd0951;
+    letter-spacing:1px;
+}
+#index-mainBody .main .main-r .logo-title h3:before,
+#index-mainBody .main .main-r .logo-title h3:after {
+    content: '';
+    position: absolute;
+    letter-spacing:0;
+}
+#index-mainBody .main .main-r .logo-title h3:before {
+    width: 54px;
+    height: 54px;
+    background: url(/skins/images/qiepian/tu_5.png) no-repeat;
+    left: 20px;
+    top: 12px;
+}
+#index-mainBody .main .main-r .logo-title h3:after {
+    content: 'NANJING  MARY MATERNITY HOSPITAL';
+    left: 82px;
+    bottom: -15px;
+    font-size: 10px;
+}
+#index-mainBody .main .main-r .logo-title p {
+    text-indent: 2em;
+    display: inline-block;
+    font-size:14px;
+    padding-left:16px;
+    padding-top:24px;
+    padding-right: 17px;
+    line-height:24px;
+    color: #817d75;
+}
+#index-mainBody .main .main-r .logo-title a {
+    display: inline;
+    font-size: 14px;
+    color: #d75f61;
+}
+#index-mainBody .main .main-r .line {
+    padding-left:13px;
+    padding-right:16px;
+    position: relative;
+    color: #b8b8b8;
+    padding-top:10px;
+    padding-bottom: 29px;
+}
+#index-mainBody .main .main-r .line:before,
+#index-mainBody .main .main-r .line:after {
+    content: '';
+    position: absolute;
+}
+#index-mainBody .main .main-r .line:before {
+    content: '--';
+    left: 163px;
+    top: 16px;
+    transform: rotateZ(60deg);
+}
+#index-mainBody .main .main-r .line:after {
+    content: '--';
+    left: 167px;
+    top: 17px;
+    transform: rotateZ(90deg);
+}
+#index-mainBody .main .main-r .zixun ul {
+    padding-right:16px;
+}
+#index-mainBody .main .main-r .zixun ul li {
+    margin-bottom:22px;
+    float: left;
+    margin-left:25px;
+    width: 70px;
+    height: 70px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#index-mainBody .main .main-r .zixun ul li:nth-child(4),
+#index-mainBody .main .main-r .zixun ul li:nth-child(5),
+#index-mainBody .main .main-r .zixun ul li:nth-child(6) {
+    margin-bottom: 0;
+}
+#index-mainBody .main .main-r .zixun ul li a {
+    color: #fff;
+    font-size:14px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 45px;
+    box-sizing: border-box;
+}
+#index-mainBody .main .main-r .zixun .number {
+    margin: 7px 22px 15px 25px;
+    padding-top:7px;
+    background-color: #f9f9f9;
+}
+#index-mainBody .main .main-r .zixun .number span:nth-child(1) {
+    font-size:16px;
+    display: inline-block;
+    padding: 5px 9px 6px 6px;
+    color: #fff;
+    background-color: #b8b8b8;
+    position: relative;
+}
+#index-mainBody .main .main-r .zixun .number span:nth-child(1):after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    border: 5px solid;
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-color: transparent transparent #b8b8b8 #b8b8b8;
+}
+#index-mainBody .main .main-r .zixun .number span:nth-child(2) {
+    display: inline-block;
+    color: #b8b8b8;
+    /*font-family: ;*/
+}
+#index-mainBody .main .main-r .zixun .number span:nth-child(2) ins {
+    font-size: 22px;
+}
+#index-mainBody .main .main-r .zixun .number span:nth-child(2) {
+    font-size: 32px;
+}
+#index-mainBody .main-r .main-r-m .hot {
+    margin-left:14px;
+    margin-right:13px;
+    border-bottom:1px solid #b8b8b8;
+    padding: 15px 0 8px;
+    position: relative;
+    margin-bottom:8px;
+}
+#index-mainBody .main-r .main-r-m .hot span a {
+    display: inline-block;
+    color: #6b6b6b;
+}
+#index-mainBody .main-r .main-r-m .hot h3 {
+    color: #f37548;
+    font-size:18px;
+    position: absolute;
+    border-bottom:1px solid #f37548;
+    padding-bottom: 8px;
+}
+
+#index-mainBody .main-r .main-r-m .hot-article {
+    padding-top:10px;
+    margin-left: 14px;
+    margin-right:13px;
+}
+#index-mainBody .main-r .main-r-m .hot-list {
+    padding-top:25px;
+    padding-bottom:25px;
+    margin-left: 14px;
+    margin-right:13px;
+    padding-left:5px;
+}
+#index-mainBody .main-r .main-r-m .hot-article img {
+    width: 110px;
+    height: 84px;
+}
+#index-mainBody .main-r .main-r-m .hot-article div.clearfix {
+    margin-bottom: 10px;
+}
+#index-mainBody .main-r .main-r-m .hot-article div.fr {
+    width: 170px;
+}
+#index-mainBody .main-r .main-r-m .hot-article div.fr h3 {
+    color: #101010;
+    font-size:16px;
+    padding-bottom: 4px;
+    padding-top:5px;
+}
+#index-mainBody .main-r .main-r-m .hot-article p {
+    font-size: 13px;
+    line-height: 28px;
+    color: #626262;
+}
+#index-mainBody .main-r .main-r-m .hot-article p a {
+    display: inline;
+    color: #d40000;
+}
+#index-mainBody .main-r .main-r-m .hot-list span,
+#index-mainBody .main-r .main-r-m .hot-list p {
+    font-size: 14px;
+    display: inline-block;
+    line-height:28px;
+}
+#index-mainBody .main-r .main-r-m .hot-list p {
+    text-indent:1em;
+}
+#index-mainBody .main-r .main-r-m .hot-list span {
+    width: 20px;
+    height: 100%;
+    line-height:22px;
+    text-align: center;
+    background-color: #D4D4D4;
+    color: #fff;
+}
+#index-mainBody .main-r .main-r-m .hot-list li {
+    margin-bottom: 10px;
+}
+#index-mainBody .main-r .main-r-m .hot-list li a {
+    display: inline;
+    margin-left: 10px;
+}
+
+#index-mainBody .main-r .main-r-m .hot-list li:nth-child(1) span,
+#index-mainBody .main-r .main-r-m .hot-list li:nth-child(2) span,
+#index-mainBody .main-r .main-r-m .hot-list li:nth-child(3) span {
+    background-color: #f37548;
+}
+
+#index-mainBody .main-r .main-r-b {
+    background-color: #f6f6f6;
+}
+#index-mainBody .main-r .main-r-b h3 {
+    font-family: "迷你简汉真广标";
+    color: #9a9a9a;
+    padding: 31px 34px 27px 36px;
+    font-size: 0;
+}
+#index-mainBody .main-r .main-r-b h3 ins {
+    color: #c60001;
+    font-size:24px;
+    display: inline;
+}
+#index-mainBody .main-r .main-r-b h3 span {
+    font-size: 24px;
+}
+
+#index-mainBody .main-r .main-r-b table {
+    padding: 0 17px 36px 20px ;
+    margin: 0 auto;
+    font-size:14px;
+}
+#index-mainBody .main-r .main-r-b table input {
+    border: 1px solid #E3E3E3;
+    font-size:14px;
+    width: 212px;
+    padding: 13px 0 9px 8px;
+}
+/**/
+#index-mainBody .main-r .main-r-b table tr td {
+}
+#index-mainBody .main-r .main-r-b table tr {
+    display: block;
+    margin-bottom:13px;
+}
+#index-mainBody .main-r .main-r-b table tbody tr td:nth-child(1) {
+    color: #000;
+}
+#index-mainBody .main-r .main-r-b table tbody tr:last-child td:nth-child(1) {
+    vertical-align: top;
+}
+
+#index-mainBody .main-r .main-r-b .ljtj {
+    padding-top:23px;
+    margin-bottom: 40px;
+}
+#index-mainBody .main-r .main-r-b .ljtj a {
+    display: block;
+    padding:13px 22px 13px 25px;
+    color: #fff;
+    background-color: #c60001;
+    margin-left:32px;
+    font-size: 14px;
+}
+#index-mainBody .main-r .main-r-b .ljtj a + a {
+    background-color: #9a9a9a;
+    margin-left:0;
+    margin-right:28px;
+}

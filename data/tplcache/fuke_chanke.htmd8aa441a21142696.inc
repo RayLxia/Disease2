@@ -1,0 +1,42 @@
+<?php
+$z[0]=Array("field","",283,306);
+$z[0][4]['name']="seotitle";
+$z[1]=Array("global","",307,333);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("global","",381,411);
+$z[2][4]['name']="cfg_description";
+$z[3]=Array("global","",452,479);
+$z[3][4]['name']="cfg_keywords";
+$z[4]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",2122,2316);
+$z[4][4]['typeid']="31";
+$z[5]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",2392,2586);
+$z[5][4]['typeid']="32";
+$z[6]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",2662,2856);
+$z[6][4]['typeid']="33";
+$z[7]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",2932,3126);
+$z[7][4]['typeid']="34";
+$z[8]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",3202,3396);
+$z[8][4]['typeid']="38";
+$z[9]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",3454,3648);
+$z[9][4]['typeid']="35";
+$z[10]=Array("type","\r\n                    <a href='[field:typelink /]' target=\"_blank\">\r\n                        [field:typename /]\r\n                    </a>\r\n                    ",3724,3918);
+$z[10][4]['typeid']="36";
+$z[11]=Array("field","",4579,4608);
+$z[11][4]['name']="position";
+$z[12]=Array("arclist","\r\n                <a href='[field:arcurl/]' target=\"_blank\">[field:title/] |</a>\r\n                ",4766,4954);
+$z[12][4]['row']="3";
+$z[12][4]['flag']="s";
+$z[12][4]['orderby']="rand";
+$z[12][4]['titlelen']="46";
+$z[12][4]['typeid']="rand";
+$z[13]=Array("field","",15674,15703);
+$z[13][4]['name']="typename";
+$z[14]=Array("channelartlist","\r\n                        <li class=\"projects-box\">\r\n                            <h3><a href=\"{dede:field name='typeurl'/}\" target=\"_blank\">{dede:field name='typename'/}</a></h3>\r\n                            <ul class=\"projects clearfix\">\r\n                                {dede:arclist titlelen='42' row='20'}\r\n                                    <li>\r\n                                        <a href=\"[field:arcurl /]\" target=\"_blank\">\r\n                                            [field:title /]\r\n                                        </a>\r\n                                    </li>\r\n                                {/dede:arclist}\r\n                            </ul>\r\n                        </li>\r\n                        ",16045,16824);
+$z[14][4]['row']="20";
+$z[15]=Array("type","\r\n                            <span><a href=\"[field:typelink /]\" target=\"_blank\">【详情】</a></span>\r\n                            ",18056,18221);
+$z[15][4]['typeid']="31";
+$z[16]=Array("channelartlist","\r\n                      <dl>\r\n                          <dt>一级标题:<a href=\"{dede:field name='typeurl'/}\">{dede:field name='typename'/}</a></dt>\r\n                          <dd>\r\n                              {dede:arclist titlelen='42' row='20'}\r\n                              <ul class='autod'>\r\n                                  <li>\r\n                                      文章标题: <a href=\"[field:arcurl /]\">\r\n                                      [field:title /]\r\n                                  </a>\r\n                                  </li>\r\n                              </ul>\r\n                              {/dede:arclist}\r\n                          </dd>\r\n                      </dl>\r\n                      ",27734,28549);
+$z[16][4]['typeid']="11,12,13,15,16,17,18,20,21,22,23";
+$z[16][4]['row']="20";
+
+?>

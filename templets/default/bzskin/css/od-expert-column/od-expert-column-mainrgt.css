@@ -1,0 +1,235 @@
+﻿@charset "uft-8";
+/*main right*/
+.main-r .main-r-b,
+.main-r .main-r-t,
+.main-r .main-r-m{
+    border: 1px solid #E3E3E3;
+    margin-bottom: 40px;
+}
+.main-r{
+    width: 327px;
+}
+.main-r .logo-title h3{
+    padding-top:18px;
+    position: relative;
+    height: 54px;
+}
+.main-r .logo-title h3:before,
+.main-r .logo-title h3:after{
+    content: '';
+    position: absolute;
+}
+.main-r .logo-title h3:after{
+    content:url("../../images/optimized-disease-article/article-r-lg.png");
+    left: 26px;
+    top: 18px;
+}
+.main-r .logo-title p{
+    text-indent: 2em;
+    display: inline-block;
+    font-size:14px;
+    padding-left:15px;
+    padding-top:16px;
+    padding-right: 15px;
+    line-height:24px;
+    color: #817d75;
+}
+.main-r .logo-title a{
+    display: inline;
+    font-size: 14px;
+    color: #d75f61;
+}
+.main-r .line{
+    padding-left:13px;
+    padding-right:16px;
+    position: relative;
+    color: #b8b8b8;
+    padding-top:10px;
+    padding-bottom: 29px;
+}
+.main-r .line:before,
+.main-r .line:after {
+    content: '';
+    position: absolute;
+}
+.main-r .line:before {
+    content: '--';
+    left: 163px;
+    top: 16px;
+    transform: rotateZ(60deg);
+}
+.main-r .line:after {
+    content: '--';
+    left: 167px;
+    top: 17px;
+    transform: rotateZ(90deg);
+}
+.main-r .zixun ul {
+    padding-right:16px;
+    padding-bottom: 7px;
+}
+.main-r .zixun ul li {
+    margin-bottom:22px;
+    padding: 7px 7px 9px 8px;
+    float: left;
+    margin-left:25px;
+    width: 56px;
+    height: 56px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.main-r .zixun ul li:first-child{
+    background: url("../../images/optimized-disease-article/r-zx.png") no-repeat center center;
+}
+.main-r .zixun ul li:nth-child(2){
+    background: url("../../images/optimized-disease-article/r-qq.png") no-repeat center center;
+}
+.main-r .zixun ul li:nth-child(3){
+    background: url("../../images/optimized-disease-article/r-yy.png") no-repeat center center;
+}
+.main-r .zixun ul li:nth-child(4){
+    background: url("../../images/optimized-disease-article/r-lgh.png") no-repeat center center;
+}
+.main-r .zixun ul li:nth-child(5){
+    background: url("../../images/optimized-disease-article/r-zj.png") no-repeat center center;
+}
+.main-r .zixun ul li:nth-child(6){
+    background: url("../../images/optimized-disease-article/r-hos-lx.png") no-repeat center center;
+}
+.main-r .zixun ul li:nth-child(4),
+.main-r .zixun ul li:nth-child(5),
+.main-r .zixun ul li:nth-child(6) {
+    margin-bottom: 0;
+}
+.main-r .zixun ul li a {
+    color: #fff;
+    font-size:14px;
+    display: block;
+    text-align: center;
+    padding-top:40px;
+}
+.main-r .zixun .number {
+    margin: 7px 21px 15px 24px;
+    padding-top:7px;
+    background-color: #f9f9f9;
+}
+.main-r .zixun .number span:nth-child(1) {
+    font-size:16px;
+    display: inline-block;
+    padding: 5px 9px 6px 6px;
+    color: #fff;
+    background-color: #b8b8b8;
+    position: relative;
+}
+.main-r .zixun .number span:nth-child(1):after {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 0;
+    border: 5px solid;
+    border-top-width: 7px;
+    border-bottom-width: 7px;
+    border-color: transparent transparent #b8b8b8 #b8b8b8;
+}
+.main-r .zixun .number span:nth-child(2) {
+    display: inline-block;
+    color: #b8b8b8;
+    font-size: 32px;
+    font-weight: bold;
+}
+.main-r .zixun .number span:nth-child(2) ins {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+.main-r .main-r-b {
+    background-color: #f6f6f6;
+}
+.main-r .main-r-b h3 {
+    font-size:24px;
+    font-family: "迷你简汉真广标";
+    color: #9a9a9a;
+    padding: 31px 34px 27px 36px;
+    font-weight: bold;
+}
+.main-r .main-r-b h3 ins{
+    color: #c60001;
+    font-weight: bold;
+    padding-right: 8px;
+}
+.main-r .main-r-b table {
+    padding: 0 17px 36px 20px ;
+    margin: 0 auto;
+    font-size:14px;
+}
+.main-r .main-r-b table input {
+    border: 1px solid #E3E3E3;
+    font-size:14px;
+    width: 212px;
+    padding: 13px 0 9px 8px;
+}
+.main-r .main-r-b table tr {
+    display: block;
+    margin-bottom:13px;
+}
+.main-r .main-r-b table tbody tr td:nth-child(1) {
+    color: #000;
+}
+.main-r .main-r-b table tbody tr:last-child td:nth-child(1) {
+    vertical-align: top;
+}
+.main-r .main-r-b .ljtj {
+    padding-top:23px;
+    margin-bottom: 40px;
+}
+.main-r .main-r-b .ljtj a {
+    display: block;
+    padding:13px 22px 13px 25px;
+    color: #fff;
+    background-color: #c60001;
+    margin-left:32px;
+    font-size: 14px;
+}
+.main-r .main-r-b .ljtj a + a {
+    background-color: #9a9a9a;
+    margin-left:0;
+    margin-right:28px;
+}
+.main-r .main-r-b table tr:nth-child(3) td:nth-child(2){
+    position: relative;
+}
+.main-r-b .yy-jt{
+    position: absolute;
+    z-index: 888;
+    right: 6px;
+    top:10px;
+    width: 30px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    background-color:#c7c7c7;
+}
+.main-r-b .yy-jt img{
+    vertical-align: middle;
+}
+.main-r-zjct p{
+    font-size: 14px;
+    color: #474747;
+    line-height: 32px;
+    padding:19px 16px 19px 12px;
+    text-indent: 1.2em;
+}
+
+.main-r-zjct p a{
+    display: inline-block;
+    color: #d70303;
+    font-size: 14px;
+    line-height: 32px;
+    margin-left: -18px;
+}
+.main-r-zjct a:before{
+    content: '...';
+    color: #474747;
+    font-size: 14px;
+    line-height: 32px;
+}

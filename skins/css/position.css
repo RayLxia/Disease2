@@ -1,0 +1,13 @@
+@charset "UTF-8";
+header {
+    margin-bottom: 40px;
+}
+.position {
+    border: 1px solid #d1d1d1;
+    padding: 14px 0 11px 18px;
+    margin-bottom:47px;
+    background-color: #f6f6f6;
+}
+.position p a {
+    display: inline;
+}

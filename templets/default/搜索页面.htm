@@ -1,0 +1,365 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+    <meta charset="GBK">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>搜索</title>
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <link rel="stylesheet" href="/skins/css/base.css">
+    <link rel="stylesheet" href="/skins/css/head.css">
+    <link rel="stylesheet" href="/skins/css/footer2.css">
+    <link rel="stylesheet" href="/skins/css/searching.css">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Live800默认功能代码: 开始-->
+    <script language="javascript" src="http://chat32.live800.com/live800/chatClient/monitor.js?jid=1671450517&companyID=234321&configID=46399&codeType=custom"></script>
+    <!-- Live800默认功能代码: 结束-->
+
+</head>
+<body>
+<header class="clearfix">
+    <div class="hd-top clearfix">
+        <div class="container">
+            <p class="fl p-welcome">欢迎来到本站！</p>
+            <ul class="fr">
+                <li class="fl">南京玛丽妇产医院门诊时间：<i>08：00-20:00</i></li>
+                <li class="fl">24小时咨询热线：025-52407966</li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<section id="index-mainBody">
+    <div class="container">
+        <form id="search" name="search" method="post" action="/plus/search.php">
+            <input type="text" name="keyword" placeholder="在这里搜索...." />
+            <input type="submit" value="立即搜索" />
+        </form>
+        <!--
+        <form>
+            <input type="text" id="search-pic" placeholder="请描述你需要搜索的相关信息">
+            <label for="search-pic"></label>
+            <input type="submit" value="立即搜索">
+        </form>
+        -->
+        <div class="skip clearfix">
+            <p class="fl">南京玛丽妇产医院站内搜索</p>
+            <p class="fr"><span>133424</span>相关搜索结果</p>
+        </div>
+    </div>
+    <div class="searching-amount">
+        <div class="container">
+            <p>玛丽妇产为您找到相关结果约<span>150</span>个</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main clearfix">
+            <div class="main-l fl">
+                <div class="ul-box">
+                    <ul>
+                        <!--
+                        {dede:list perpage='20'}
+                        <li>
+                            <h3><a href="[field:arcurl/]" target="_blank"><strong>[field:title/]</strong></a></h3>
+                            <p>[field:description/]...</p>
+                            <span>
+         <a href="[field:arcurl/]">[field:global.cfg_basehost/][field:arcurl/]</a>
+      <small>分类：</small><a href="[field:typeurl/]" target="_blank">[field:typename/]</a>
+      <small>点击：</small>[field:click/]
+      <small>日期：</small>[field:stime/]
+     </span>
+                        </li>
+                        <br />
+                        {/dede:list}
+                        -->
+
+                        {dede:list perpage='20'}
+                        <li>
+                            <div class="title">
+                                <a href="[field:arcurl/]" target="_blank">[field:title/]</a>
+                            </div>
+                            <div class="main-des clearfix">
+                                <div class="img-box fl">
+                                    <img src="[field:litpic/]" style="border: none" alt="[field:title /]">
+                                </div>
+                                <div class="main-article fl">
+                                    <p>[field:description function="cn_substr(@me,120)"/]...<span><a href="[field:arcurl /]" target="_blank">【详情】</a></span></p>
+                                    <p>
+                                        <a href="#" target="_blank">www.njmary.com/▼</a>
+                                        <span>[field:global.cfg_basehost/]</span>
+                                        <span>[field:click/]</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        {/dede:list}
+
+                    </ul>
+                </div>
+                <div class="more-search">
+                    <h3>相关搜索</h3>
+                    <ul class="clearfix">
+                        <li>
+                            <a href="#">四维彩超有哪些功能?</a>
+                        </li>
+                        <li>
+                            <a href="#">四维彩超有哪些功能?</a>
+                        </li>
+                        <li>
+                            <a href="#">四维彩超有哪些功能?</a>
+                        </li>
+                        <li>
+                            <a href="#">四维彩超有哪些功能?</a>
+                        </li>
+                        <li>
+                            <a href="#">四维彩超有哪些功能?</a>
+                        </li>
+                        <li>
+                            <a href="#">四维彩超有哪些功能?</a>
+                        </li>
+                        <li>
+                            <a href="#">四维彩超有哪些功能?</a>
+                        </li>
+                        <li>
+                            <a href="#">四维彩超有哪些功能?</a>
+                        </li>
+                        <li>
+                            <a href="#">四维彩超有哪些功能?</a>
+                        </li>
+                    </ul>
+                    <div class="splitpage">
+                        <a href="#" class="pre"> &lt;上一页 </a>
+                        <div class="page">
+                            <a href="#" class="current">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <a href="#">6</a>
+                            <a href="#">7</a>
+                            <a href="#">8</a>
+                        </div>
+                        <a href="#" class="next">下一页&gt;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-r fl">
+                <div class="hot-intro">
+                    <div class="clearfix">
+                        <h3 class="fl">热点推荐</h3>
+                        <a href="#" class="fr" target="_blank">更多+</a>
+                    </div>
+                    <div class="hot-box">
+                        <ul class="clearfix">
+                            <li>
+                                <div class="img-box"></div>
+                                <a href="#"><p>如何判断自己早孕了</p></a>
+                            </li>
+                            <li>
+                                <div class="img-box"></div>
+                                <a href="#"><p>如何判断自己早孕了</p></a>
+                            </li>
+                            <li>
+                                <div class="img-box"></div>
+                                <a href="#"><p>如何判断自己早孕了</p></a>
+                            </li>
+                            <li>
+                                <div class="img-box"></div>
+                                <a href="#"><p>如何判断自己早孕了</p></a>
+                            </li>
+                            <li>
+                                <div class="img-box"></div>
+                                <a href="#"><p>如何判断自己早孕了</p></a>
+                            </li>
+                            <li>
+                                <div class="img-box"></div>
+                                <a href="#"><p>如何判断自己早孕了</p></a>
+                            </li>
+                            <li>
+                                <div class="img-box"></div>
+                                <a href="#"><p>如何判断自己早孕了</p></a>
+                            </li>
+                            <li>
+                                <div class="img-box"></div>
+                                <a href="#"><p>如何判断自己早孕了</p></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hot-search">
+                    <div class="clearfix">
+                        <h3 class="fl">网友热搜</h3>
+                        <a href="#" class="fr" target="_blank">更多+</a>
+                    </div>
+                    <div class="clearfix">
+                            <span class="fl">关注点</span>
+                            <span class="fr">关注热度</span>
+                        </div>
+                    <div class="hot-search-box">
+                        <ul class="clearfix">
+                            <li class="clearfix">
+                                <p class="fl"><a href="#">输卵管堵塞怎么治疗好?</a></p>
+                                <p class="fr">260</p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="fl"><a href="#">输卵管堵塞怎么治疗好?</a></p>
+                                <p class="fr">260</p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="fl"><a href="#">输卵管堵塞怎么治疗好?</a></p>
+                                <p class="fr">260</p>
+                            </li>
+                            <li class="clearfix">
+                                <p class="fl"><a href="#">输卵管堵塞怎么治疗好?</a></p>
+                                <p class="fr">260</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="small-tip">
+                        以上内容系根据网友搜索自动排序生成
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container clearfix">
+        <div class="clearfix">
+            <div class="ftr-fl fl">
+                <i class="ftr-logo"></i>
+                <p><span>咨询热线</span><span>：</span><span>025-524007966</span></p>
+            </div>
+            <div class="ul-box fl">
+                <ul class="fl">
+                    <li>
+                        计划生育
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">无痛人流</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">药物流产</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">无痛引产</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">避孕</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">宫外孕</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">上环取环</a>
+                    </li>
+                    <li>
+                        <a href="/a/xiangmu/" target="_blank">查看更多>></a>
+                    </li>
+                </ul>
+                <ul class="fl">
+                    <li>
+                        精品妇科
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">宫颈疾病</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">子宫疾病</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">妇科肿瘤</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">乳腺疾病</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">内分泌失调</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">生殖器感染</a>
+                    </li>
+                    <li>
+                        <a href="/a/baike/fuke/" target="_blank">查看更多>></a>
+                    </li>
+                </ul>
+                <ul class="fl">
+                    <li>
+                        微创妇科
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">处女膜修复</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">阴道紧缩</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">小阴唇整形</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">大阴唇整形</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">阴道口狭窄</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">阴道再造</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">阴蒂整形</a>
+                    </li>
+                    <li>
+                        <a href="/a/baike/fuke/" target="_blank">查看更多>></a>
+                    </li>
+                </ul>
+                <ul class="fl">
+                    <li>
+                        温馨产科
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">孕前准备(孕前)</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">产前检查(孕前检查)</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">唐氏筛查</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">无创产前检测</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">四维彩超</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">孕期疾病</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">剖腹产</a>
+                    </li>
+                    <li>
+                        <a href="/a/baike/chanke/" target="_blank">查看更多>></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ftr-fr fr">
+                <p></p>
+                <p>扫一扫，关注玛丽官方微信</p>
+            </div>
+        </div>
+        <div class="ftr-ctr fl">
+            <p>网站备案号：苏ICP备11070472号-14（宁）医广【2016】第05—18—079号医院地址：南京市雨花东路2号(雨花台烈士陵园正大门东侧)&nbsp;&nbsp;&nbsp;&nbsp;南京玛</p>
+            <p>丽妇产医院 。版权所有&nbsp;&nbsp;&nbsp;&nbsp;南京玛丽妇产医院 本站信息仅供参考，不能作为诊断及治疗的依据。</p>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

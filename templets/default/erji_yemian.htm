@@ -1,0 +1,708 @@
+<!DOCTYPE  html>
+<html lang="en">
+<head>
+    <meta charset="GBK">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{dede:field.seotitle /}_{dede:global.cfg_webname/}</title>
+    <meta name="description" content="{dede:global.cfg_description/}" />
+    <meta name="keywords" content="{dede:global.cfg_keywords/}" />
+    <link rel="stylesheet" href="/skins/css/base.css">
+    <link rel="stylesheet" href="/skins/css/head.css">
+    <link rel="stylesheet" href="/skins/css/position.css">
+    <link rel="stylesheet" href="/skins/css/search.css">
+    <link rel="stylesheet" href="/skins/css/index-right.css">
+    <link rel="stylesheet" href="/skins/css/bottom-tab.css">
+    <link rel="stylesheet" href="/skins/css/footer2.css">
+    <link rel="stylesheet" href="/skins/css/second.css">
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Live800默认功能代码: 开始-->
+    <script language="javascript" src="http://chat32.live800.com/live800/chatClient/monitor.js?jid=1671450517&companyID=234321&configID=46399&codeType=custom"></script>
+    <!-- Live800默认功能代码: 结束-->
+
+</head>
+<body>
+<header class="clearfix">
+    <div class="hd-top clearfix">
+        <div class="container">
+            <p class="fl p-welcome">欢迎来到本站！</p>
+            <ul class="fr">
+                <li class="fl">南京玛丽妇产医院门诊时间：<i>08：00-20:00</i></li>
+                <li class="fl">24小时咨询热线：025-52407966</li>
+            </ul>
+        </div>
+    </div>
+    <div class="hd-menu clearfix">
+        <div class="container">
+            <i class="i-logo fl">南京玛丽妇产医院</i>
+            <div class="menu-fr fr">
+                <p class="fl">
+                    <a href="/" target="_blank">网站首页</a>
+                </p>
+                <p class="fl">
+                    {dede:type typeid='31'}
+                    <a href='[field:typelink /]' target="_blank">
+                        [field:typename /]
+                    </a>
+                    {/dede:type}
+                </p>
+                <p class="fl">
+                    {dede:type typeid='32'}
+                    <a href='[field:typelink /]' target="_blank">
+                        [field:typename /]
+                    </a>
+                    {/dede:type}
+                </p>
+                <p class="fl">
+                    {dede:type typeid='33'}
+                    <a href='[field:typelink /]' target="_blank">
+                        [field:typename /]
+                    </a>
+                    {/dede:type}
+                </p>
+                <p class="fl">
+                    {dede:type typeid='34'}
+                    <a href='[field:typelink /]' target="_blank">
+                        [field:typename /]
+                    </a>
+                    {/dede:type}
+                </p>
+                <p class="fl"><a href="#" target="_blank">预约挂号</a></p>
+                <p class="fl">
+                    {dede:type typeid='35'}
+                    <a href='[field:typelink /]' target="_blank">
+                        [field:typename /]
+                    </a>
+                    {/dede:type}
+                </p>
+                <p class="fl">
+                    {dede:type typeid='36'}
+                    <a href='[field:typelink /]' target="_blank">
+                        [field:typename /]
+                    </a>
+                    {/dede:type}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="hd-banner clearfix">
+        <ul class="clearfix hd-banner-cot-box">
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="container hd-banner-cot">
+            <div class="jt-cot fl jt-fl-po">
+                <i class="jt-fl"></i>
+            </div>
+            <div class="jt-cot fr jt-fr-po">
+                <i class="jt-fr"></i>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="index-mainBody">
+    <div class="container">
+        <div class="position">
+            <p>您当前位置 : {dede:field name='position'/}</p>
+        </div>
+        <div class="search clearfix">
+            <div class="fl search-l">
+                <span>热门搜索 : </span>
+                {dede:arclist pagesize='3' typeid='24,25,26,27,28,29,30' flag='s' orderby='rand' titlelen="46" }
+                <a href="[field:arcurl /]" target="_blank">[field:title /] |</a>
+                {/dede:arclist}
+            </div>
+            <div class="fr search-r">
+                <form id="search" name="search" method="post" action="/plus/search.php">
+                    <input type="text" name="keyword" placeholder="在这里搜索...." />
+                    <input type="submit" value="立即搜索" />
+                </form>
+            </div>
+        </div>
+        <div class="main clearfix">
+            <div class="main-l fl">
+                <div class="main-l-t clearfix">
+                    <ul class="ul-box">
+                        {dede:channelartlist typeid="37"  row="20"}
+                        <li class="tab-1">
+                            <div class="clearfix title1">
+                                <div class="fl">{dede:field name='typename'/}</div>
+                                <div class="fr"><a href="{dede:field name='typeurl'/}" target="_blank">MORE+</a></div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="ul-box1">
+                                {dede:arclist pagesize="1" flag="a" titlelen="46" orderby='rand'}
+                                <div class="clearfix li">
+                                    <div class="pic fl">
+                                        <img src="[field:litpic/]" style="border: none" alt="[field:title /]">
+                                    </div>
+                                    <div class="ul-box1-article fl">
+                                        <h3>[field:title /]</h3>
+                                        <p>[field:description function="cn_substr(@me,120)"/]... <span><a href="[field:arcurl /]" target="_blank">【查看更多】</a></span></p>
+                                    </div>
+                                </div>
+                                {/dede:arclist}
+                                <div class="zhenzhuang clearfix">
+                                    <ul class="clearfix">
+                                        {dede:arclist pagesize="8" noflag="a" titlelen="46" orderby='rand'}
+                                        <li>
+                                            <a href="[field:arcurl /] " target="_blank">
+                                                [field:title /]
+                                            </a>
+                                        </li>
+                                        {/dede:arclist}
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        {/dede:channelartlist}
+                        <!--
+                        <li class="tab-1">
+                            <div class="clearfix title1">
+                                {dede:type typeid='24'}
+                                <div class="fl">[field:typename /]</div>
+                                {/dede:type}
+                                <div class="fr"><a href="#" target="_blank">MORE+</a></div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="ul-box1">
+                                {dede:arclist pagesize="1" typeid="24" flag="a" titlelen="46" orderby='rand'}
+                                <div class="clearfix li">
+                                    <div class="pic fl">
+                                        <img src="[field:litpic/]" style="border: none" alt="[field:title /]">
+                                    </div>
+                                    <div class="ul-box1-article fl">
+                                        <h3>[field:title /]</h3>
+                                        <p>[field:description function="cn_substr(@me,120)"/]... <span><a href="[field:arcurl /]" target="_blank">【查看更多】</a></span></p>
+                                    </div>
+                                </div>
+                                {/dede:arclist}
+                                <div class="zhenzhuang clearfix">
+                                    <ul class="clearfix">
+                                        {dede:arclist pagesize="8" typeid="24" noflag="a" titlelen="46" orderby='rand'}
+                                        <li>
+                                            <a href="[field:arcurl /] " target="_blank">
+                                                [field:title /]
+                                            </a>
+                                        </li>
+                                        {/dede:arclist}
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab-1">
+                            <div class="clearfix title1">
+                                {dede:type typeid='25'}
+                                <div class="fl">[field:typename /]</div>
+                                {/dede:type}
+                                <div class="fr"><a href="#" target="_blank">MORE+</a></div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="ul-box1">
+                                {dede:arclist pagesize="1" typeid="25" flag="a" titlelen="46" orderby='rand'}
+                                <div class="clearfix li">
+                                    <div class="pic fl">
+                                        <img src="[field:litpic/]" style="border: none" alt="[field:title /]">
+                                    </div>
+                                    <div class="ul-box1-article fl">
+                                        <h3>[field:title /]</h3>
+                                        <p>[field:description function="cn_substr(@me,120)"/]... <span><a href="[field:arcurl /]" target="_blank">【查看更多】</a></span></p>
+                                    </div>
+                                </div>
+                                {/dede:arclist}
+                                <div class="zhenzhuang clearfix">
+                                    <ul class="clearfix">
+                                        {dede:arclist pagesize="8" typeid="25" noflag="a" titlelen="46" orderby='rand'}
+                                        <li>
+                                            <a href="[field:arcurl /] " target="_blank">
+                                                [field:title /]
+                                            </a>
+                                        </li>
+                                        {/dede:arclist}
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab-1">
+                            <div class="clearfix title1">
+                                {dede:type typeid='26'}
+                                <div class="fl">[field:typename /]</div>
+                                {/dede:type}
+                                <div class="fr"><a href="#" target="_blank">MORE+</a></div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="ul-box1">
+                                {dede:arclist pagesize="1" typeid="26" flag="a" titlelen="46" orderby='rand'}
+                                <div class="clearfix li">
+                                    <div class="pic fl">
+                                        <img src="[field:litpic/]" style="border: none" alt="[field:title /]">
+                                    </div>
+                                    <div class="ul-box1-article fl">
+                                        <h3>[field:title /]</h3>
+                                        <p>[field:description function="cn_substr(@me,120)"/]... <span><a href="[field:arcurl /]" target="_blank">【查看更多】</a></span></p>
+                                    </div>
+                                </div>
+                                {/dede:arclist}
+                                <div class="zhenzhuang clearfix">
+                                    <ul class="clearfix">
+                                        {dede:arclist pagesize="8" typeid="26" noflag="a" titlelen="46" orderby='rand'}
+                                        <li>
+                                            <a href="[field:arcurl /] " target="_blank">
+                                                [field:title /]
+                                            </a>
+                                        </li>
+                                        {/dede:arclist}
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab-1">
+                            <div class="clearfix title1">
+                                {dede:type typeid='27'}
+                                <div class="fl">[field:typename /]</div>
+                                {/dede:type}
+                                <div class="fr"><a href="#" target="_blank">MORE+</a></div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="ul-box1">
+                                {dede:arclist pagesize="1" typeid="27" flag="a" titlelen="46" orderby='rand'}
+                                <div class="clearfix li">
+                                    <div class="pic fl">
+                                        <img src="[field:litpic/]" style="border: none" alt="[field:title /]">
+                                    </div>
+                                    <div class="ul-box1-article fl">
+                                        <h3>[field:title /]</h3>
+                                        <p>[field:description function="cn_substr(@me,120)"/]... <span><a href="[field:arcurl /]" target="_blank">【查看更多】</a></span></p>
+                                    </div>
+                                </div>
+                                {/dede:arclist}
+                                <div class="zhenzhuang clearfix">
+                                    <ul class="clearfix">
+                                        {dede:arclist pagesize="8" typeid="27" noflag="a" titlelen="46" orderby='rand'}
+                                        <li>
+                                            <a href="[field:arcurl /] " target="_blank">
+                                                [field:title /]
+                                            </a>
+                                        </li>
+                                        {/dede:arclist}
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab-1">
+                            <div class="clearfix title1">
+                                {dede:type typeid='28'}
+                                <div class="fl">[field:typename /]</div>
+                                {/dede:type}
+                                <div class="fr"><a href="#" target="_blank">MORE+</a></div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="ul-box1">
+                                {dede:arclist pagesize="1" typeid="28" flag="a" titlelen="46" orderby='rand'}
+                                <div class="clearfix li">
+                                    <div class="pic fl">
+                                        <img src="[field:litpic/]" style="border: none" alt="[field:title /]">
+                                    </div>
+                                    <div class="ul-box1-article fl">
+                                        <h3>[field:title /]</h3>
+                                        <p>[field:description function="cn_substr(@me,120)"/]... <span><a href="[field:arcurl /]" target="_blank">【查看更多】</a></span></p>
+                                    </div>
+                                </div>
+                                {/dede:arclist}
+                                <div class="zhenzhuang clearfix">
+                                    <ul class="clearfix">
+                                        {dede:arclist pagesize="8" typeid="28" noflag="a" titlelen="46" orderby='rand'}
+                                        <li>
+                                            <a href="[field:arcurl /] " target="_blank">
+                                                [field:title /]
+                                            </a>
+                                        </li>
+                                        {/dede:arclist}
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab-1">
+                            <div class="clearfix title1">
+                                {dede:type typeid='29'}
+                                <div class="fl">[field:typename /]</div>
+                                {/dede:type}
+                                <div class="fr"><a href="#" target="_blank">MORE+</a></div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="ul-box1">
+                                {dede:arclist pagesize="1" typeid="29" flag="a" titlelen="46" orderby='rand'}
+                                <div class="clearfix li">
+                                    <div class="pic fl">
+                                        <img src="[field:litpic/]" style="border: none" alt="[field:title /]">
+                                    </div>
+                                    <div class="ul-box1-article fl">
+                                        <h3>[field:title /]</h3>
+                                        <p>[field:description function="cn_substr(@me,120)"/]... <span><a href="[field:arcurl /]" target="_blank">【查看更多】</a></span></p>
+                                    </div>
+                                </div>
+                                {/dede:arclist}
+                                <div class="zhenzhuang clearfix">
+                                    <ul class="clearfix">
+                                        {dede:arclist pagesize="8" typeid="29" noflag="a" titlelen="46" orderby='rand'}
+                                        <li>
+                                            <a href="[field:arcurl /] " target="_blank">
+                                                [field:title /]
+                                            </a>
+                                        </li>
+                                        {/dede:arclist}
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tab-1">
+                            <div class="clearfix title1">
+                                {dede:type typeid='30'}
+                                <div class="fl">[field:typename /]</div>
+                                {/dede:type}
+                                <div class="fr"><a href="#" target="_blank">MORE+</a></div>
+                            </div>
+                            <div class="line"></div>
+                            <div class="ul-box1">
+                                {dede:arclist pagesize="1" typeid="30" flag="a" titlelen="46" orderby='rand'}
+                                <div class="clearfix li">
+                                    <div class="pic fl">
+                                        <img src="[field:litpic/]" style="border: none" alt="[field:title /]">
+                                    </div>
+                                    <div class="ul-box1-article fl">
+                                        <h3>[field:title /]</h3>
+                                        <p>[field:description function="cn_substr(@me,120)"/]... <span><a href="[field:arcurl /]" target="_blank">【查看更多】</a></span></p>
+                                    </div>
+                                </div>
+                                {/dede:arclist}
+                                <div class="zhenzhuang clearfix">
+                                    <ul class="clearfix">
+                                        {dede:arclist pagesize="8" typeid="30" noflag="a" titlelen="46" orderby='rand'}
+                                        <li>
+                                            <a href="[field:arcurl /] " target="_blank">
+                                                [field:title /]
+                                            </a>
+                                        </li>
+                                        {/dede:arclist}
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        -->
+                    </ul>
+                    <!--
+                    <div class="splitpage">
+                        <a href="#" target="_blank">首页</a>
+                        <div class="page">
+                            <a href="#" class="current">1</a>
+                            <a href="#" target="_blank">2</a>
+                            <a href="#" target="_blank">3</a>
+                        </div>
+                        <a href="#" class="pre">上一页</a>
+                        <a href="#" class="next">下一页</a>
+                    </div>
+                    -->
+                </div>
+            </div>
+
+            <div class="main-r fr">
+                <div class="main-r-t">
+                    <div class="logo-title">
+                        <h3>南京玛丽妇产医院</h3>
+                        <p>南京玛丽妇产医院是经南京市卫生局正式批准设立的二级专业妇产医院。引进港式先进的医疗服务管理体系，形成了“人有专长、科有特色、院有优势”的医院特色...{dede:type typeid="31"}
+                            <span><a href="[field:typelink /]" target="_blank">【详情】</a></span>
+                            {/dede:type}
+                        </p>
+                    </div>
+                    <div class="line">
+                        ----------------------&nbsp;------------------
+                    </div>
+                    <div class="zixun">
+                        <ul class="clearfix">
+                            <li class="bgf385ac">
+                                <a href="#" target="_blank">
+                                    在线咨询
+                                </a>
+                            </li>
+                            <li class="bgf39a3c">
+                                <a href="#" target="_blank">
+                                    QQ挂号
+                                </a>
+                            </li>
+                            <li class="bgd75f61">
+                                <a href="#" target="_blank">
+                                    在线预约
+                                </a>
+                            </li>
+                            <li class="bgdfbf38">
+                                <a href="#" target="_blank">
+                                    在线挂号
+                                </a>
+                            </li>
+                            <li class="bg45beb7">
+                                <a href="#" target="_blank">
+                                    在线专家
+                                </a>
+                            </li>
+                            <li class="bg6ba0c2">
+                                <a href="#" target="_blank">
+                                    来院路线
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="number">
+                            <span>咨询<br>热线</span>
+                            <span><ins>025-</ins>524079666</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-r-b">
+                    <h3>
+                        <ins>30秒</ins>
+                        <span>轻松完成预约挂号</span>
+                    </h3>
+                    <table cellspacing="14">
+                        <tbody>
+                        <tr>
+                            <td>您的姓名 :</td>
+                            <td><input type="text" placeholder="请填写您的真实姓名"></td>
+                        </tr>
+                        <tr>
+                            <td>联系方式 :</td>
+                            <td><input type="text" placeholder="请填写您的真实联系方式"></td>
+                        </tr>
+                        <tr>
+                            <td>预约时间 :</td>
+                            <td class="datep"><input class="datainp" id="dateinfo" type="text" placeholder="请选择"
+                                                     readonly></td>
+                        </tr>
+                        <tr>
+                            <td>病情描述 :</td>
+                            <td><textarea name="" id="" cols="20" rows="5" style="border-color:#E3E3E3"></textarea></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="ljtj clearfix">
+                        <a href="#" class="fl" target="_blank">立即提交</a>
+                        <a href="#" class="fr" target="_blank">点击预约</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-tab clearfix">
+            <ul class="fl f-ul">
+                <li class="current">医院环境</li>
+                <li>先进设备</li>
+                <li>社区活动</li>
+            </ul>
+            <div class="fl s-ul-box">
+                <ul class="fl s-ul">
+                    <li>
+                        <ul class="clearfix inner-ul">
+                            <li>
+                                <img src="/skins/images/qiepian/hj-1.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/skins/images/qiepian/hj-2.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/skins/images/qiepian/hj-3.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/skins/images/qiepian/hj-4.png" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="clearfix inner-ul">
+                            <li>
+                                <img src="/skins/images/qiepian/sheb-1.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/skins/images/qiepian/sheb-2.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/skins/images/qiepian/sheb-3.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/skins/images/qiepian/sheb-4.png" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="clearfix inner-ul">
+                            <li>
+                                <img src="/skins/images/qiepian/sq-1.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/skins/images/qiepian/sq-2.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/skins/images/qiepian/sq-3.png" alt="">
+                            </li>
+                            <li>
+                                <img src="/skins/images/qiepian/sq-4.png" alt="">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container clearfix">
+        <div class="clearfix">
+            <div class="ftr-fl fl">
+                <i class="ftr-logo"></i>
+                <p><span>咨询热线</span><span>：</span><span>025-524007966</span></p>
+            </div>
+            <div class="ul-box fl">
+                <ul class="fl">
+                    <li>
+                        计划生育
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">无痛人流</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">药物流产</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">无痛引产</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">避孕</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">宫外孕</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">上环取环</a>
+                    </li>
+                    <li>
+                        <a href="/a/xiangmu/" target="_blank">查看更多>></a>
+                    </li>
+                </ul>
+                <ul class="fl">
+                    <li>
+                        精品妇科
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">宫颈疾病</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">子宫疾病</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">妇科肿瘤</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">乳腺疾病</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">内分泌失调</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">生殖器感染</a>
+                    </li>
+                    <li>
+                        <a href="/a/baike/fuke/" target="_blank">查看更多>></a>
+                    </li>
+                </ul>
+                <ul class="fl">
+                    <li>
+                        微创妇科
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">处女膜修复</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">阴道紧缩</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">小阴唇整形</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">大阴唇整形</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">阴道口狭窄</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">阴道再造</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">阴蒂整形</a>
+                    </li>
+                    <li>
+                        <a href="/a/baike/fuke/" target="_blank">查看更多>></a>
+                    </li>
+                </ul>
+                <ul class="fl">
+                    <li>
+                        温馨产科
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">孕前准备(孕前)</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">产前检查(孕前检查)</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">唐氏筛查</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">无创产前检测</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">四维彩超</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">孕期疾病</a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">剖腹产</a>
+                    </li>
+                    <li>
+                        <a href="/a/baike/chanke/" target="_blank">查看更多>></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ftr-fr fr">
+                <p></p>
+                <p>扫一扫，关注玛丽官方微信</p>
+            </div>
+        </div>
+        <div class="ftr-ctr fl">
+            <p>网站备案号：苏ICP备11070472号-14（宁）医广【2016】第05—18—079号医院地址：南京市雨花东路2号(雨花台烈士陵园正大门东侧)&nbsp;&nbsp;&nbsp;&nbsp;南京玛</p>
+            <p>丽妇产医院 。版权所有&nbsp;&nbsp;&nbsp;&nbsp;南京玛丽妇产医院 本站信息仅供参考，不能作为诊断及治疗的依据。</p>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="/skins/js/jquery-2.2.0.min.js"></script>
+<script type="text/javascript" src="/skins/jedate/jedate.js"></script>
+<script src="/skins/js/index.js"></script>
+<script src="/skins/js/second.js"></script>
+<script type="text/javascript">
+    //jeDate.skin('gray');
+    jeDate({
+        dateCell: "#dateinfo",
+        format: "YYYY年MM月DD日 hh:mm:ss",
+        isinitVal: true,
+        isTime: true, //isClear:false,
+        minDate: "2014-09-19 00:00:00",
+        okfun: function (val) {
+            alert(val)
+        }
+    })
+</script>
+</html>
