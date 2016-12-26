@@ -467,6 +467,7 @@
     font-size: 40px;
     cursor: pointer;
     z-index: 999;
+    color: #dfdfdf;
 }
 #index-mainBody .main-l .main-l-mb .tab-3-main .pre {
     left: -10px;
