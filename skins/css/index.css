@@ -342,12 +342,14 @@
 
 #index-mainBody .main-l .main-l-mb .tab-3 .tab-3-ul li:last-child,
 #index-mainBody .main-l .main-l-m .tab-2 .tab-2-ul li:last-child {
-    padding-bottom: 12px;
+    padding-bottom: 15px;
+    font-size: 0;
 }
 #index-mainBody .main-l .main-l-m .tab-2 .tab-2-ul li:last-child a,
 #index-mainBody .main-l .main-l-mb .tab-3 .tab-3-ul li:last-child a {
     display: inline;
-    line-height: 12px;
+    line-height: 16px;
+    font-size: 16px;
 }
 #index-mainBody .main-l .main-l-mb .tab-3 .tab-3-ul li:last-child span,
 #index-mainBody .main-l .main-l-m .tab-2 .tab-2-ul li:last-child span {

@@ -107,8 +107,27 @@ $(function () {
     $(".tab-3-ul li:last-child").unbind("click");
     $(".tab-3-ul li:first-child").unbind("click");
     // $(".tab-3-ul li:first-child").unbind("click");
-    $(".last-tab .f-ul li").click(function () {
+    $(".last-tab .f-ul li").hover(function () {
         $(this).addClass("current").siblings().removeClass("current");
         $(".last-tab .s-ul").stop().animate({"top": $(this).index() * (-174)}, 800)
     })
-})
+
+    function getOs() {
+        if (navigator.userAgent.indexOf("MSIE") > 0) {
+            return "MSIE";
+        }else if (navigator.userAgent.indexOf("Firefox") > 0) {
+            return "Firefox";
+        }else if (navigator.userAgent.indexOf("Safari") > 0) {
+            return "Safari";
+        }else if (navigator.userAgent.indexOf("Camino") > 0) {
+            return "Camino";
+        }else if (navigator.userAgent.indexOf("Gecko/") > 0) {
+            return "Gecko";
+        }
+    }
+    if (getOs() == "Firefox") {
+        $("#index-mainBody .main-l .main-l-mb .tab-3 .tab-3-ul li:last-child, #index-mainBody .main-l .main-l-m .tab-2 .tab-2-ul li:last-child").css({"padding-bottom":"14px"});
+    }else {
+        return false;
+    }
+});
