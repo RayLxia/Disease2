@@ -32,10 +32,8 @@ $(function () {
         $(this).addClass("current").siblings().removeClass("current");
         $(".last-tab .s-ul").stop().animate({"top": $(this).index() * (-174)}, 800)
     });
-    var speed1 = -118;
-    var speed2 = -325;
+
     var index = 0;
-    var nowDis = 0;
     var len = $(".main-r-m .zhuanjia-box ul").children().length;
     console.log(len);
     function getShow() {
