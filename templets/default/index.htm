@@ -109,7 +109,9 @@
                 <h3>计划生育</h3>
                 <div>
                     {dede:arclist typeid='16' flag='h' orderby='pubdate' titlelen="46" row='5' }
-                    <a href="[field:arcurl /]" target="_blank">[field:title /]</a>
+                    <a href="[field:arcurl /]" target="_blank">
+                        [field:array runphp='yes'] if (@me['shorttitle']=='') @me=@me['title'];else @me=@me['shorttitle'];[/field:array]
+                    </a>
                     {/dede:arclist}
                     <a href="/a/baike/fuke/" target="_blank">查看更多>></a>
                 </div>
@@ -118,7 +120,9 @@
                 <h3>精品妇科</h3>
                 <div>
                     {dede:arclist typeid='17,18,21,22,23' flag='h' orderby='pubdate' titlelen="46" row='5' }
-                    <a href="[field:arcurl /]" target="_blank">[field:title /]</a>
+                    <a href="[field:arcurl /]" target="_blank">
+                        [field:array runphp='yes'] if (@me['shorttitle']=='') @me=@me['title'];else @me=@me['shorttitle'];[/field:array]
+                    </a>
                     {/dede:arclist}
                     <a href="/a/baike/fuke/" target="_blank">查看更多>></a>
                 </div>
@@ -127,7 +131,9 @@
                 <h3>微创妇科</h3>
                 <div>
                     {dede:arclist typeid='20' flag='h' orderby='pubdate' titlelen="46" row='5' }
-                    <a href="[field:arcurl /]" target="_blank">[field:title /]</a>
+                    <a href="[field:arcurl /]" target="_blank">
+                        [field:array runphp='yes'] if (@me['shorttitle']=='') @me=@me['title'];else @me=@me['shorttitle'];[/field:array]
+                    </a>
                     {/dede:arclist}
                     <a href="/a/baike/fuke/" target="_blank">查看更多>></a>
                 </div>
@@ -136,7 +142,9 @@
                 <h3>温馨产科</h3>
                 <div>
                     {dede:arclist typeid='11,12,13,15' flag='h' orderby='pubdate' titlelen="46" row='5' }
-                    <a href="[field:arcurl /]" target="_blank">[field:title /]</a>
+                    <a href="[field:arcurl /]" target="_blank">
+                        [field:array runphp='yes'] if (@me['shorttitle']=='') @me=@me['title'];else @me=@me['shorttitle'];[/field:array]
+                    </a>
                     {/dede:arclist}
                     <a href="/a/baike/chanke/" target="_blank">查看更多>></a>
                 </div>
@@ -561,7 +569,7 @@
                                             <ins>副主任医师</ins>
                                             <ins>妇科专家</ins>
                                         </h3>
-                                        <p>江苏人民医院副主任医师、副教授，从事妇产科临床工作已40余年，经验丰富，擅长妇科疑难杂症的诊治及手术，并且对各类妇科手术及计划生育各类手术操作熟练......<span><a href="#">【详情】</a></span></p>
+                                        <p>江苏人民医院副主任医师、副教授，从事妇产科临床工作已40余年，经验丰富，擅长妇科疑难杂症的诊治及手术，并且对各类妇科手术及计划生育各类手术操作熟练，尤其对老年妇科疾病的临床防治更为擅长。</p>
                                     </div>
                                     <div class="experts-b">
                                         <h4>专家答疑 :</h4>
@@ -589,7 +597,7 @@
                                             <ins>主任医师</ins>
                                             <ins>妇科专家</ins>
                                         </h3>
-                                        <p>南京市妇幼保健院妇产科主任医师，副教授，硕士研究生导师。从事妇产科临床、科研、教学工作40年，临床经验丰富，擅长妇科良恶性肿瘤、妇科生殖内分泌疾病及女性不孕症......<span><a href="#">【详情】</a></span></p>
+                                        <p>南京市妇幼保健院妇产科主任医师，副教授，硕士研究生导师。从事妇产科临床、科研、教学工作40年，临床经验丰富，擅长妇科良恶性肿瘤、妇科生殖内分泌疾病及女性不孕症的诊。</p>
                                     </div>
                                     <div class="experts-b">
                                         <h4>专家答疑 :</h4>
@@ -617,7 +625,7 @@
                                             <ins>主任医师</ins>
                                             <ins>妇科专家</ins>
                                         </h3>
-                                        <p>主任医师，南京市妇幼保健院妇产科主任医师，南京医科大学兼职副教授，从事妇产科工作近40年，曾任中华医学会南京妇产科分会委员，南京市围产协作组委员......<span><a href="#">【详情】</a></span></p>
+                                        <p>主任医师，南京市妇幼保健院妇产科主任医师，南京医科大学兼职副教授，从事妇产科工作近40年，曾任中华医学会南京妇产科分会委员，南京市围产协作组委员，熟练掌握各类妇科疾病的诊疗方法。</p>
                                     </div>
                                     <div class="experts-b">
                                         <h4>专家答疑 :</h4>
@@ -645,7 +653,7 @@
                                             <ins>主治医师</ins>
                                             <ins>妇科专家</ins>
                                         </h3>
-                                        <p>毕业于青海医学院临床医学系，从事妇产临床工作十多年。对妇产常见病、多发病、疑难杂病的诊治技术全面, 擅长中西医结合治疗各种妇科炎症、子宫肌瘤......<span><a href="#">【详情】</a></span></p>
+                                        <p>毕业于青海医学院临床医学系，从事妇产临床工作十多年。对妇产常见病、多发病、疑难杂病的诊治技术全面, 擅长中西医结合治疗各种妇科炎症等疾病，熟练开展计划生育四项手术、阴道前后壁修补手术等。</p>
                                     </div>
                                     <div class="experts-b">
                                         <h4>专家答疑 :</h4>
@@ -673,7 +681,7 @@
                                             <ins>主治医师</ins>
                                             <ins>妇科专家</ins>
                                         </h3>
-                                        <p>毕业于上海医科大学，从事妇产科临床工作近二十年，曾在南京市妇幼保健院妇产科工作十年。精通本专业理论知识以及临床业务，对各种妇科炎症、月经失调......<span><a href="#">【详情】</a></span></p>
+                                        <p>毕业于上海医科大学，从事妇产科临床工作近二十年，曾在南京市妇幼保健院妇产科工作十年。精通本专业理论知识以及临床业务，熟练操作计划生育手术、子宫肌瘤、卵巢囊肿、不孕症的开腹及宫腹腔镜手术。</p>
                                     </div>
                                     <div class="experts-b">
                                         <h4>专家答疑 :</h4>
@@ -699,9 +707,9 @@
                                     <div class="experts-t">
                                         <h3>张建红
                                             <ins>妇科专家</ins>
-                                            <!--<ins>妇科专家</ins>-->
+                                            <ins>妇科专家</ins>
                                         </h3>
-                                        <p>毕业于南京医科大学，从事妇产科临床工作近三十年，对妇产科的常见病和多发病有着丰富的临床经验，尤其擅长外阴疾病、宫颈疾病以及内分泌疾病的诊治，曾多次参加过妇产科......<span><a href="#">【详情】</a></span></p>
+                                        <p>毕业于南京医科大学，从事妇产科临床工作近三十年，对妇产科的常见病和多发病有着丰富的临床经验，尤其擅长外阴疾病、宫颈疾病以及内分泌疾病的诊治，曾多次参加过妇产科微创技术的研讨会议。</p>
                                     </div>
                                     <div class="experts-b">
                                         <h4>专家答疑 :</h4>
@@ -729,7 +737,7 @@
                                             <ins>副主任医师</ins>
                                             <ins>妇科专家</ins>
                                         </h3>
-                                        <p>我院特聘专家。毕业于南京医科大学医疗系妇产科临床专业，具有三十多年妇产科临床工作经验。常州市医疗事故专家组委员、溧阳市医学会妇产科学术组组长、溧阳市卫生局计生委专家。......<span><a href="#">【详情】</a></span></p>
+                                        <p>我院特聘专家。毕业于南京医科大学医疗系妇产科临床专业，具有三十多年妇产科临床工作经验。常州市医疗事故专家组委员、溧阳市医学会妇产科学术组组长、溧阳市卫生局计生委专家。</p>
                                     </div>
                                     <div class="experts-b">
                                         <h4>专家答疑 :</h4>
@@ -758,8 +766,7 @@
                                             <ins>妇科专家</ins>
                                         </h3>
                                         <p>
-                                            从事超声诊断工作近40年，曾任南京医学会超声专业组委员，擅长妇产科、乳腺超声诊断及介入性超声诊断及治疗，对围生期超声、产前四维彩超诊断胎儿畸形，等方面有较深入的研究。......<span><a
-                                                href="#">【详情】</a></span></p>
+                                            从事超声诊断工作近40年，曾任南京医学会超声专业组委员，擅长妇产科、乳腺超声诊断及介入性超声诊断及治疗，对围生期超声、产前四维彩超诊断胎儿畸形，等方面有较深入的研究。</p>
                                     </div>
                                     <div class="experts-b">
                                         <h4>专家答疑 :</h4>
@@ -788,7 +795,7 @@
                                             <ins>妇科专家</ins>
                                         </h3>
                                         <p>
-                                            曾就职于南京市第一医院，从事妇产科临床工作近40年，理论基础扎实，临床经验丰富。能独立较好的完成妇产科中等以及中等以上的常见手术，擅长妇产科常见病、多发病的诊断处理。......<span><a href="#">【详情】</a></span>
+                                            曾就职于南京市第一医院，从事妇产科临床工作近40年，理论基础扎实，临床经验丰富。能独立较好的完成妇产科中等以及中等以上的常见手术，擅长妇产科常见病、多发病的诊断处理。
                                         </p>
                                     </div>
                                     <div class="experts-b">
@@ -892,7 +899,7 @@
                         </span>
                     </div>
                     <div class="hot-article clearfix">
-                        {dede:arclist typeid='24,25,26,27,28,29,30,31,32,33,34,35,36,38' flag='a' titlelen='35' orderby='rand' }
+                        {dede:arclist typeid='24,25,26,27,28,29,30,31,32,33,34,35,36,38' flag='a' titlelen='35' orderby='rand' pagesize="1" }
                         <div class="clearfix">
                             <div class="fl">
                                 <img src="[field:litpic/]" style="border: none" alt="[field:title /]">
@@ -908,7 +915,7 @@
                     </div>
                     <div class="hot-list">
                         <ul>
-                            {dede:arclist typeid='24,25,26,27,28,29,30,31,32,33,34,35,36,38' titlelen="46" orderby='rand' flag='c' noflag='a' }
+                            {dede:arclist typeid='24,25,26,27,28,29,30,31,32,33,34,35,36,38' titlelen="46" orderby='rand' flag='c' noflag='a' pagesize="9" }
                             <li>
                                 <span>[field:global.autoindex/]</span>
                                 <a href="[field:arcurl /] " target="_blank">[field:title /]</a>

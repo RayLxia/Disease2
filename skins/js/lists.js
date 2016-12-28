@@ -28,7 +28,7 @@ $(function () {
         }
         $(".hd-banner-cot-box").stop().animate({"left":-getBannerBoxMove()*moveNum});
     });
-    $(".last-tab .f-ul li").click(function () {
+    $(".last-tab .f-ul li").hover(function () {
         $(this).addClass("current").siblings().removeClass("current");
         $(".last-tab .s-ul").stop().animate({"top": $(this).index() * (-174)}, 800)
     });

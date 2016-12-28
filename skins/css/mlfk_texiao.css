@@ -10,10 +10,10 @@
     left: 50%;
     margin-left: -75px;
     top: 25px;
-    color: #008d9f;
-    background-color: #E0FBFF;
+    color: #d75f61;
+    background-color: #f5f5f5;
     z-index: 999;
-    border: 1px solid #008d9f;
+    border: 1px solid #d75f61;
     display: none;
 }
 .main-l-tt .main-l-tt-b .decorate-box .webBox a,
@@ -31,4 +31,14 @@
 .main-l-tt .main-l-tt-b .decorate-box .webBox a:hover,
 .main-l-tt .main-l-tt-t .decorate-box .webBox a:hover {
     background-color: #fff;
+}
+
+.webBox-out {
+    position: relative;
+}
+.main-l-tt .decorate-box .decorate {
+    position: relative;
+}
+.main-l-tt .decorate-box .decorate li a {
+    height: 100%;
 }
