@@ -1,4 +1,7 @@
 @charset "UTF-8";
-#index-mainBody .main-r .main-r-m {
-    height: 640px;
+#index-mainBody .main-r .main-r-m ul li {
+    display: none;
+}
+#index-mainBody .main-r .main-r-m ul li.show {
+    display: block;
 }

@@ -7,7 +7,12 @@ $(function () {
     },function () {
         $(this).children(".webBox").css({"display":"none"});
     });
-
+    function delHtmlTag(str)
+    {
+        var str=str.replace(/<\/?[^>]*>/gim,"");//去掉所有的html标记
+        var result=str.replace(/(^\s+)|(\s+$)/g,"");//去掉前后空格
+        return  result.replace(/\s/g,"");//去除文章中间空格
+    };
     var scaleBigH = 22;
     $(".main-l-tt .contentBody").children("li").each(function (index,item) {
         var num = $(item).find(".webBox a").length;
@@ -15,7 +20,7 @@ $(function () {
             var liI = document.createElement("li");
             var aI = document.createElement("a");
             aI.href = $(item).find(".webBox a")[i].href;
-            aI.title = $(item).find(".webBox a")[i].innerText;
+            aI.title = delHtmlTag($(item).find(".webBox a")[i].innerHTML);
             aI.target = "_blank";
             liI.appendChild(aI);
             $(item).find(".decorate")[0].appendChild(liI);
