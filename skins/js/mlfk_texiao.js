@@ -7,8 +7,19 @@ $(function () {
     },function () {
         $(this).children(".webBox").css({"display":"none"});
     });
-    function delHtmlTag(str)
-    {
+    /**
+     *  获取从后台来的链接,动态创建li和a,并赋予对应的链接
+     *  通过正则将前后空格去除,赋予到a的title属性中
+     *  mouseenter时,不改变.webBox-out的宽度,只改变.webBox-out及内部元素的高,以及ul的宽度,
+     *  mousemove时,根据鼠标在其中的位置,通过公式
+     *       mouseX = event.pageX - $(this).offset().left
+     *       eqi = mouseX / $(this).width()
+     *       ulMoveX = eqi * ($(this).children("ul").width() - $(this).width() - 8)
+     *       计算出ul要走的距离
+     *      改变高度时注意整体的协调性
+     *  mouseleave时,各项数据回归,
+     * */
+    function delHtmlTag(str) {
         var str=str.replace(/<\/?[^>]*>/gim,"");//去掉所有的html标记
         var result=str.replace(/(^\s+)|(\s+$)/g,"");//去掉前后空格
         return  result.replace(/\s/g,"");//去除文章中间空格

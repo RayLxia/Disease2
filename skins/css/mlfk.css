@@ -184,6 +184,9 @@ li.co819e1c li {
     color: #c13528;
     margin-bottom: 25px;
 }
+#index-mainBody .main-l .main-l-t .ul-box .projects-box h3 a {
+    display: inline;
+}
 #index-mainBody .main-l .main-l-t .ul-box .projects-box h3,
 #index-mainBody .main-l .main-l-t .ul-box .projects-box .projects {
     padding-left: 25px;
