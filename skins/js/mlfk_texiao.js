@@ -3,31 +3,19 @@
  */
 $(function () {
     $(".main-l-tt .decorate-box p").hover(function () {
-        $(this).children(".webBox").css({"display":"block"});
-    },function () {
-        $(this).children(".webBox").css({"display":"none"});
+        $(this).children(".webBox").css({"display": "block"});
+    }, function () {
+        $(this).children(".webBox").css({"display": "none"});
     });
-    /**
-     *  获取从后台来的链接,动态创建li和a,并赋予对应的链接
-     *  通过正则将前后空格去除,赋予到a的title属性中
-     *  mouseenter时,不改变.webBox-out的宽度,只改变.webBox-out及内部元素的高,以及ul的宽度,
-     *  mousemove时,根据鼠标在其中的位置,通过公式
-     *       mouseX = event.pageX - $(this).offset().left
-     *       eqi = mouseX / $(this).width()
-     *       ulMoveX = eqi * ($(this).children("ul").width() - $(this).width() - 8)
-     *       计算出ul要走的距离
-     *      改变高度时注意整体的协调性
-     *  mouseleave时,各项数据回归,
-     * */
     function delHtmlTag(str) {
-        var str=str.replace(/<\/?[^>]*>/gim,"");//去掉所有的html标记
-        var result=str.replace(/(^\s+)|(\s+$)/g,"");//去掉前后空格
-        return  result.replace(/\s/g,"");//去除文章中间空格
+        var str = str.replace(/<\/?[^>]*>/gim, "");//去掉所有的html标记
+        var result = str.replace(/(^\s+)|(\s+$)/g, "");//去掉前后空格
+        return result.replace(/\s/g, "");//去除文章中间空格
     };
     var scaleBigH = 22;
-    $(".main-l-tt .contentBody").children("li").each(function (index,item) {
+    $(".main-l-tt .contentBody").children("li").each(function (index, item) {
         var num = $(item).find(".webBox a").length;
-        for(var i = 0; i < num; i++){
+        for (var i = 0; i < num; i++) {
             var liI = document.createElement("li");
             var aI = document.createElement("a");
             aI.href = $(item).find(".webBox a")[i].href;
@@ -38,8 +26,8 @@ $(function () {
         }
     });
 
-    $(".webBox-out").each(function (index,item) {
-        $(item).width($(this).children(".decorate").width()+$(this).children(".decorate").paddingLeft);
+    $(".webBox-out").each(function (index, item) {
+        $(item).width($(this).children(".decorate").width() + $(this).children(".decorate").paddingLeft);
     });
     $(".main-l-tt-t .webBox-out").mousemove(function (event) {
         var event = event || window.event,
@@ -48,7 +36,7 @@ $(function () {
             ulMoveX = eqi * ($(this).children("ul").width() - $(this).width() - 8),
             len2 = $(this).parent().children("p").children(".webBox").children("a").length;
         $(this).css({
-            "width": len2*11+len2-2+parseInt($(this).children(".decorate").css("padding-left"))+"px",
+            "width": len2 * 11 + len2 - 2 + parseInt($(this).children(".decorate").css("padding-left")) + "px",
             "height": scaleBigH,
             "overflow": "hidden",
             "border": "1px solid #e3e3e3",
@@ -61,26 +49,39 @@ $(function () {
             "height": scaleBigH - 5,
             "width": scaleBigH - 3
         });
-        $(".main-l-tt .main-l-tt-t").css({"marginBottom":"25px"});
+        $(".main-l-tt .main-l-tt-t").css({"marginBottom": "25px"});
     }).mouseleave(function () {
         $(this).css({
             "width": "auto",
-            "height": 11+4+"px",
+            "height": 11 + 4 + "px",
             "overflow": "visible",
             "border": "none",
         }).children("ul").css({
             "borderTop": "1px solid #e3e3e3",
             "borderBottom": "1px solid #e3e3e3",
-            "height": 13+"px",
+            "height": 13 + "px",
             "width": "auto",
             "left": "0"
         }).end().children("ul").children("li").css({
             "height": 13,
             "width": 11
         });
-        $(".main-l-tt .main-l-tt-t").css({"marginBottom":"30px"});
+        $(".main-l-tt .main-l-tt-t").css({"marginBottom": "30px"});
         $(".main-l-tt .decorate-box:last-child .decorate").css({"borderRight": "1px solid #e3e3e3"});
     });
+
+    $(".main-l-tt-t .decorate-box:last-child .webBox-out").mousemove(function () {
+        var  len2 = $(this).parent().children("p").children(".webBox").children("a").length;
+        $(this).css({"width": len2 * 11 + len2  + parseInt($(this).children(".decorate").css("padding-left")) + "px"})
+    })
+    $(".main-l-tt-t .decorate-box:first-child .webBox-out").mousemove(function () {
+        var  len2 = $(this).parent().children("p").children(".webBox").children("a").length;
+        $(this).css({"width": len2 * 11 + len2 -1  + parseInt($(this).children(".decorate").css("padding-left")) + "px"})
+    }).mouseleave(function () {
+        $(this).children(".decorate").css({
+            "borderLeft": "1px solid #e3e3e3"
+        })
+    })
 
     $(".main-l-tt-b .webBox-out").mousemove(function (event) {
         var event = event || window.event,
@@ -89,7 +90,7 @@ $(function () {
             ulMoveX = eqi * ($(this).children("ul").width() - $(this).width() - 8),
             len2 = $(this).parent().children("p").children(".webBox").children("a").length;
         $(this).css({
-            "width": len2*11+len2-2+parseInt($(this).children(".decorate").css("padding-left"))+"px",
+            "width": len2 * 11 + len2 - 2 + parseInt($(this).children(".decorate").css("padding-left")) + "px",
             "height": scaleBigH,
             "overflow": "hidden",
             "border": "1px solid #e3e3e3",
@@ -102,24 +103,38 @@ $(function () {
             "height": scaleBigH - 5,
             "width": scaleBigH - 3
         });
-        $(".main-l-tt .main-l-tt-b").css({"marginBottom":"25px"});
+        $(".main-l-tt .main-l-tt-b").css({"marginBottom": "25px"});
     }).mouseleave(function () {
         $(this).css({
             "width": "auto",
-            "height": 11+4+"px",
+            "height": 11 + 4 + "px",
             "overflow": "visible",
             "border": "none",
         }).children("ul").css({
             "borderTop": "1px solid #e3e3e3",
             "borderBottom": "1px solid #e3e3e3",
-            "height": 13+"px",
+            "height": 13 + "px",
             "width": "auto",
             "left": "0"
         }).end().children("ul").children("li").css({
             "height": 13,
             "width": 11
         });
-        $(".main-l-tt .main-l-tt-b").css({"marginBottom":"30px"});
+        $(".main-l-tt .main-l-tt-b").css({"marginBottom": "30px"});
         $(".main-l-tt .decorate-box:last-child .decorate").css({"borderRight": "1px solid #e3e3e3"});
     });
+
+
+    $(".main-l-tt-b .decorate-box:last-child .webBox-out").mousemove(function () {
+        var  len2 = $(this).parent().children("p").children(".webBox").children("a").length;
+        $(this).css({"width": len2 * 11 + len2  + parseInt($(this).children(".decorate").css("padding-left")) + "px"})
+    })
+    $(".main-l-tt-b .decorate-box:first-child .webBox-out").mousemove(function () {
+        var  len2 = $(this).parent().children("p").children(".webBox").children("a").length;
+        $(this).css({"width": len2 * 11 + len2 -1 + parseInt($(this).children(".decorate").css("padding-left")) + "px"})
+    }).mouseleave(function () {
+        $(this).children(".decorate").css({
+            "borderLeft": "1px solid #e3e3e3"
+        })
+    })
 })
